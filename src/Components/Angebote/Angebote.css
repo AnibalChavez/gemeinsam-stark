@@ -1,0 +1,48 @@
+.angebote {
+    background-color: #7e4d9e;
+    padding: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .description p {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .description img {
+    width: 490px; /* Nuevo ancho de la imagen circular */
+    height: 423px; /* Nuevo alto de la imagen circular */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+  }
+  
+  /* Media query para ajustar tamaño de imagen en la sección uno */
+  @media screen and (max-width: 768px) {
+    .description img {
+      width: 100%; /* Ancho 100% en pantallas más pequeñas */
+      height: auto; /* Altura automática para mantener la proporción */
+      max-width: 490px; /* Tamaño máximo de imagen */
+      max-height: 423px; /* Tamaño máximo de imagen */
+    }
+  }
+  

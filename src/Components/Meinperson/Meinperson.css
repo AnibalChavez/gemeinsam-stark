@@ -1,0 +1,119 @@
+/* CSS general */
+.mein-person {
+    background-color: #7e4d9e;
+    padding: 20px;
+  }
+  
+  .mein-person > div {
+    margin-bottom: 20px;
+  }
+  
+  .mein-person > div:last-child {
+    margin-bottom: 0;
+  }
+  
+  .mein-person > div:not(:last-child) {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+  }
+  
+  .mein-person h1,
+  .mein-person p {
+    color: white;
+  }
+  
+  .mein-person > div > div {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .mein-person img {
+    max-width: 100%;
+  }
+  
+  /* CSS para la cuadrícula de imágenes */
+.image-grid {
+   
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 400px; /* Tamaño fijo para las imágenes */
+    height: 400px; /* Tamaño fijo para las imágenes */
+    border-radius: 50%; /* Hacer que el borde sea circular */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor manteniendo las proporciones */
+    margin: 0 auto; /* Centrar horizontalmente las imágenes */
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio de 16:9 para videos de YouTube */
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* CSS para la primera sección */
+  .mein-person .first-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mein-person .first-section .left-content,
+  .mein-person .first-section .right-content {
+    max-width: calc(100% - 20px); /* El 20px es para el espacio entre las columnas */
+  }
+  
+  .mein-person .first-section .left-content img,
+  .mein-person .first-section .right-content img {
+   
+    max-width: 100%;
+  }
+  
+  .mein-person .first-section .right-content h1,
+  .mein-person .first-section .right-content p {
+    color: white;
+    margin: 10px 0;
+  }
+  /* CSS para la primera sección */
+.first-section .left-content .img1{
+    max-width: 1000px; /* Ancho máximo de las imágenes */
+    width: 100%; /* Ajuste del ancho al 100% del contenedor padre */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.first-section .right-content .img2 {
+  max-width: 100%; /* Ancho máximo de las imágenes */
+  width: 500px; /* Ajuste del ancho al 100% del contenedor padre */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+@media (max-width: 768px) {
+  .first-section .left-content .img1,
+  .first-section .right-content .img2 {
+    max-width: 100%; /* Ancho máximo igual al 100% del contenedor padre en dispositivos móviles */
+  }
+}
+
+  @media (max-width: 768px) {
+    .mein-person > div > div {
+      padding: 0;
+    }
+  
+    .image-grid {
+        padding-left: 0px;
+      grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas en dispositivos móviles */
+    }
+  
+    .video-container {
+      padding-bottom: 75%; /* Ajustar la relación de aspecto para dispositivos móviles */
+    }
+  }
+  

@@ -1,0 +1,51 @@
+/* Footer.css */
+
+footer {
+    background-color: #ffffff; /* Color de fondo del footer */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alinear el contenido al centro */
+  }
+  
+  h1 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+  }
+  
+  .social-links {
+    list-style: none; /* Eliminar estilos de lista */
+    padding: 0; /* Eliminar relleno */
+    display: flex; /* Mostrar en línea */
+    justify-content: center; /* Centrar horizontalmente */
+  }
+  
+  .social-links li {
+    margin: 0 10px; /* Espacio entre los íconos de redes sociales */
+  }
+  
+  .social-links a {
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 40px; /* Ancho de los enlaces de redes sociales */
+    height: 40px; /* Altura de los enlaces de redes sociales */
+    background-color: #7E4D9E; /* Color de fondo de los enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+    border-radius: 50%; /* Forma circular */
+    text-align: center; /* Alinear el texto al centro */
+    line-height: 40px; /* Altura de línea verticalmente centrada */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+  }
+  
+  .social-links a:hover {
+    background-color: #7E4D9E; /* Cambiar el color de fondo al pasar el ratón */
+  }
+  
+  /* Media queries para dispositivos móviles */
+  
+  @media screen and (max-width: 768px) {
+    .social-links {
+      flex-wrap: wrap; /* Permitir que los enlaces se envuelvan en pantallas pequeñas */
+    }
+  
+    .social-links li {
+      margin: 10px 5px; /* Aumentar el espacio entre los íconos de redes sociales */
+    }
+  }
+  

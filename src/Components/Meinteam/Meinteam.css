@@ -1,0 +1,111 @@
+/* CSS general */
+.mein-team {
+    background-color: #7e4d9e;
+    padding: 20px;
+  }
+  
+  .mein-team > div {
+    margin-bottom: 20px;
+  }
+  
+  .mein-team > div:last-child {
+    margin-bottom: 0;
+  }
+  
+  .mein-team > div:not(:last-child) {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+  }
+  
+  .mein-team h1,
+  .mein-team h2,
+  .mein-team p {
+    color: white;
+  }
+  
+  .mein-team > div > div {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .mein-team img {
+    max-width: 100%;
+  }
+  
+  /* Estilo para las imágenes redondas */
+  .mein-team img.rounded {
+    border-radius: 50%;
+  }
+  
+  /* Estilo para la sección de equipo */
+  .foto-team,
+  .foto-tier {
+    text-align: center;
+  }
+  
+  .foto-team img,
+  .foto-tier img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .person1,
+  .person2,
+  .person3,
+  .person4 {
+    flex: 1 0 50%; /* Para que ocupen 50% del ancho en pantallas grandes */
+  }
+  
+  .person1 img,
+  .person2 img,
+  .person3 img,
+  .person4 img {
+    width: 100px; /* Tamaño de las imágenes redondas */
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para la sección de tiers */
+  .tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 20px;
+  }
+  
+  .tier1,
+  .tier2,
+  .tier3,
+  .tier4,
+  .tier5,
+  .tier6,
+  .tier7,
+  .tier8,
+  .tier9,
+  .tier10,
+  .tier11,
+  .tier12 {
+    text-align: center;
+  }
+  
+  .tiers img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  }
+  
+  @media (max-width: 768px) {
+    .mein-team > div > div {
+      padding: 0;
+    }
+  
+    .team .person1,
+    .team .person2,
+    .team .person3,
+    .team .person4 {
+      flex: 1 0 100%; /* Cambiar a ocupar todo el ancho en pantallas pequeñas */
+    }
+  }
+  
